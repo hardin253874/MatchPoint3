@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html ng-app="matchpoint-app">
+<head>
+    <title>MatchPoint</title>
+	<meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="../Scripts/Bootstrap/css/bootstrap.css" />
+</head>
+<body ng-cloak>
+    
+
+    <div ng-view></div>
+
+
+    <script src="../Scripts/Angular/angular.js"></script>
+    <script src="../Scripts/Angular/angular-route.js"></script>
+    <script src="../Scripts/Angular-ui/angular-ui.js"></script>
+    <script src="../Scripts/Angular-ui-router/angular-ui-router.js"></script>
+    <script src="../Scripts/Angular-ui-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="../Scripts/jquery/jquery.js"></script>
+    <script src="../Scripts/Bootstrap/js/bootstrap.js"></script>
+    <script src="../Scripts/MatchPoint.client_components.js"></script>
+    <script src="../Scripts/MatchPoint.client_apps.js"></script>
+    
+
+    <script>
+        console.log('APP LOADING: ' + window.location.href);
+        
+        angular.module('matchpoint-app', ['app']);
+    </script>
+</body>
+</html>
